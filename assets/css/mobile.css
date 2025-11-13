@@ -4,7 +4,6 @@ html {
   padding: 0px;
   margin: 0px;
   height: 100vh;
-  background-color: #1C5CA2;
 }
 
 body {
@@ -17,12 +16,28 @@ body {
   background-color: #1C5CA2;
 }
 
+.bg-d-blue {
+  background-color: #033F88;
+}
+
 .c-white {
   color: #FFFFFF;
 }
 
+.br-50 {
+  border-radius: 50px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
 .p-20 {
   padding: 20px;
+}
+
+.pb-5 {
+  padding-bottom: 5px;
 }
 
 .d-flex {
@@ -39,4 +54,13 @@ body {
 
 .ai-center {
   align-items: center;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.safe-top-area {
+  background-color: #1C5CA2;
+  height: env(safe-area-inset-top);
 }
