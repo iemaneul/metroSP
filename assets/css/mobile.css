@@ -60,7 +60,13 @@ body {
   font-size: 18px;
 }
 
-.safe-top-area {
+.statusbar-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: #1C5CA2;
-  height: env(safe-area-inset-top);
+  height: 32px;
+  height: calc(20px + env(safe-area-inset-top));
+  z-index: 9999;
 }
