@@ -1,4 +1,9 @@
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
 
 html {
   padding: 0px;
@@ -7,9 +12,13 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #f8f8f8;
   margin: 0px;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
 }
 
 .bg-blue {
@@ -53,6 +62,10 @@ body {
   height: 100px;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 .ms-30 {
   margin-left: 30px;
   margin-right: 30px;
@@ -70,8 +83,16 @@ body {
   flex-direction: column;
 }
 
+.flex-1 {
+  flex: 1;
+}
+
 .gap-10 {
   gap: 10px;
+}
+
+.gap-20 {
+  gap: 20px;
 }
 
 .jc-center {
@@ -95,7 +116,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #1C5CA2;
+  background-color: #1C5CA1;
   height: 32px;
   height: calc(20px + env(safe-area-inset-top));
   z-index: 9999;
@@ -113,14 +134,12 @@ p.title {
 
 .box-sp {
   margin: 0px 30px;
-  border-radius: 10px;
-  padding: 15px;
+  border-radius: 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-image: linear-gradient(rgba(28, 92, 162, 0.8),rgba(28, 92, 162, 0.8)), url(/assets/images/sp-bg.jpg);
-  background-size: cover;
-  background-position: center;
+  background-color: #1C5CA2;
   color: #FFFFFF;
   font-size: 14px;
 }
@@ -132,10 +151,43 @@ p.title {
 
 .box-sp button {
   width: fit-content;
-  float: right;
-  padding: 5px 10px;
+  align-self: flex-end;
+  padding: 10px;
   border: none;
   background-color: #FFFFFF;
   color: #000000;
-  border-radius: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.service-box {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+  gap: 10px
+}
+
+.service-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.service {
+  background-color: #1C5CA1;
+  padding: 20px 10px;
+  flex: 1;
+  border-radius: 20px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.service i {
+  font-size: 35px;
+}
+
+.service p {
+  font-size: 12px;
 }
