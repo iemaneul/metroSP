@@ -535,3 +535,11 @@ a {
 .arrow-box-15 {
   color: #8f8f8c;
 }
+
+.selected {
+  margin-right: 0px;
+  width: -webkit-fill-available;
+  display: block;
+  margin-top: -15px;
+  text-align: center;
+}
